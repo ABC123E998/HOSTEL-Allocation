@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="hostelallocation.controllers.RegisterController"
+            prefWidth="600" prefHeight="400">
+
+    <children>
+        <Label text="Student Registration" layoutX="200" layoutY="30"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+        <Label text="Full Name:" layoutX="120" layoutY="90" />
+        <TextField fx:id="nameField" layoutX="220" layoutY="85" prefWidth="250" />
+
+        <Label text="Reg Number:" layoutX="120" layoutY="130" />
+        <TextField fx:id="regNumberField" layoutX="220" layoutY="125" prefWidth="250" />
+
+        <Label text="Department:" layoutX="120" layoutY="170" />
+        <TextField fx:id="departmentField" layoutX="220" layoutY="165" prefWidth="250" />
+
+        <Button text="Register" layoutX="250" layoutY="220" onAction="#handleRegister" />
+    </children>
+    </AnchorPane>
